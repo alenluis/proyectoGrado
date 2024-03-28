@@ -28,13 +28,9 @@ class GeneraOrdenes extends Model
         'ac_no',
         'especial_code',
         'especial',
-        'numero_documento'
+        'numero_documento'-
     ];
 
-    public function matricula()
-    {
-        return $this->belongsTo(Matricula::class,'mat_id','id');
-    }
     
 
     use HasFactory;

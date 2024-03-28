@@ -7,6 +7,7 @@
         
         .container {
             font-family: 'Allegrian', cursive; /* Aplica la fuente Allegrian al texto dentro del contenedor */
+            color: black; /* Cambia el color del texto a negro */
         }
     </style>
 
