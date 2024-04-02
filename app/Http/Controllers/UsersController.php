@@ -36,12 +36,11 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            // Aquí coloca las reglas de validación para los campos de entrada
-        ]);
-
-        User::create($validatedData);
-        return redirect(route('users.index'));
+        $input=$request->all();   
+            User::create($input);
+            return redirect(route('users.index'));
+    
+       
     }
 
     /**
