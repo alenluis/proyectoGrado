@@ -1,5 +1,5 @@
 <div class="container">
-    <form action="{{ isset($curso) ? route('cursos.update', $curso->cur_id) : route('cursos.store') }}" method="POST">
+    <form action="{{ isset($curso) ? route('cursos.update', $curso->id) : route('cursos.store') }}" method="POST">
         @csrf
         @isset($curso)
             @method('PUT')

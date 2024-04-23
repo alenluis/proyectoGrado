@@ -5,7 +5,7 @@
 <h1>Editar Cursos</h1>
 <div class="container">
     <div>
-        <form action="{{route('cursos.update',$curso->cur_id)}}" method="POST">
+        <form action="{{route('cursos.update',$curso->id)}}" method="POST">
         @csrf    
         @include('cursos.fields')
         </form>

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('lecciones', function (Blueprint $table) {
             $table->id('lec_id');
-            $table->foreignId('cur_id')->constrained('cursos', 'cur_id'); // Indica la columna 'cur_id' como clave externa
+            $table->foreignId('id')->constrained('cursos', 'id'); // Indica la columna 'cur_id' como clave externa
             $table->string('lec_titulo');
             $table->string('lec_descripcion');
             $table->string('lec_video');

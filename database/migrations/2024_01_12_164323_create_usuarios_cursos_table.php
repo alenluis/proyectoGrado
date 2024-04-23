@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('usuarios_cursos', function (Blueprint $table) {
             $table->id('usc_id');
             $table->foreignId('usu_id')->references('usu_id')->on('users');
-            $table->foreignId('cur_id')->references('cur_id')->on('cursos');
+            $table->foreignId('id')->references('id')->on('cursos');
             $table->date('usc_fecha_registro');
             $table->date('usc_fecha_finaliza');
             $table->integer('usu_estado')->default(1);

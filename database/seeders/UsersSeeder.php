@@ -19,7 +19,7 @@ class UsersSeeder extends Seeder
                 'usu_nombre'=>'Alexito69',
                 'usu_telefono'=>'0999999999',
                 'email'=>'alexito69@gmail.com',
-                'password'=>bcrypt('123456789')
+                'password'=>bcrypt('12345678999')
             ]
         );  
         DB::table('users')->insert(

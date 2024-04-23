@@ -35,7 +35,7 @@ class CursosController extends Controller
     {
         //para guardar los datos de un nuevo registro 
         $input=$request->all();
-        Cursos::create($input);
+        Cursos::create($input); 
         return redirect(route('cursos.index'));
     }
 
@@ -50,10 +50,10 @@ class CursosController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit($cur_id)
+    public function edit($id)
     {
         // Obtener el curso con el ID proporcionado
-        $curso = Cursos::find($cur_id);
+        $curso = Cursos::find($id);
         // Mostrar la vista de edición con los datos del curso
         return view('cursos.edit', ['curso' => $curso]);
     }
@@ -62,13 +62,13 @@ class CursosController extends Controller
     /**
      * Update the specified resource in storage.
      */
- public function update(Request $request, $cur_id)
+ public function update(Request $request, $id)
 {
     // Actualizar datos
     $input = $request->all();
     
     // Encuentra el curso por ID
-    $curso = Cursos::find($cur_id);
+    $curso = Cursos::find($id);
 
     // Actualiza los datos del curso con la información del formulario
     $curso->update($input);
@@ -81,11 +81,11 @@ class CursosController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($cur_id)
+    public function destroy($id)
     {
         //para elminar datos
         // dd('listo para eliminar');
-        $curso = Cursos::find($cur_id);
+        $curso = Cursos::find($id);
         $curso->delete();
         return redirect()->route('cursos.index');
     }

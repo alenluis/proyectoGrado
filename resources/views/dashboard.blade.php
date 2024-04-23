@@ -1,13 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+    <!-- Agrega la importación de la fuente Allegrian en la hoja de estilo -->
     <style>
-        /* Agrega una regla de estilo para utilizar la fuente Allegrian */
+        /* Utiliza la fuente Allegrian */
         @import url('https://fonts.googleapis.com/css2?family=Allegrian&display=swap');
         
+        /* Estilo para el contenido */
         .container {
-            font-family: 'Allegrian', cursive; /* Aplica la fuente Allegrian al texto dentro del contenedor */
-            color: black; /* Cambia el color del texto a negro */
+            font-family: 'Allegrian', cursive;
+            color: black;
         }
     </style>
 

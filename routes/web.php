@@ -38,6 +38,7 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/GenerarOrdenes',[GenerarOrdenesController::class,'generarOrdenes'])->name('GeneraOrdenes');
 
+     Route::post('/eliminarOrden',[GenerarOrdenesController::class,'eliminarOrden'])->name ('eliminarOrden'); 
 
 });
 require __DIR__.'/auth.php';

@@ -14,7 +14,7 @@ class CursosSeeder extends Seeder
     {
         DB::table('cursos')->insert(
             [
-                'cur_id'=>1,
+                'id'=>1,
                 'cur_titulo'=>'Informatica',
                 'cur_descripcion'=>'Todo sobre el mundo de la informatica',
                 'cur_grupo'=>'Grupo Tercero'
@@ -22,7 +22,7 @@ class CursosSeeder extends Seeder
         );
         DB::table('cursos')->insert(
             [
-                'cur_id'=>2,
+                'id'=>2,
                 'cur_titulo'=>'Pasteleria',
                 'cur_descripcion'=>'Todo sobre el mundo de la Pasteleria',
                 'cur_grupo'=>'Grupo Segundo'
@@ -30,7 +30,7 @@ class CursosSeeder extends Seeder
         );
         DB::table('cursos')->insert(
             [
-                'cur_id'=>3,
+                'id'=>3,
                 'cur_titulo'=>'Musica',
                 'cur_descripcion'=>'Todo sobre el mundo de la Musica',
                 'cur_grupo'=>'Grupo Octavo'
@@ -38,7 +38,7 @@ class CursosSeeder extends Seeder
         );
         DB::table('cursos')->insert(
             [
-                'cur_id'=>4,
+                'id'=>4,
                 'cur_titulo'=>'Matematica',
                 'cur_descripcion'=>'Todo sobre el mundo de la Matematica',
                 'cur_grupo'=>'Grupo Primero'
